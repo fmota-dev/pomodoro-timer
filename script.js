@@ -3,9 +3,9 @@ let emExecucao = false
 let modoAtual = 'Pomodoro'
 let tempoRestante = 1500 // 25 minutos em segundos para Pomodoro
 const tempos = {
-	Pomodoro: 5, // 25 minutos em segundos para Pomodoro
-	'Pausa Curta': 5, // 10 minutos em segundos para Pausa Curta
-	'Pausa Longa': 5, // 20 minutos em segundos para Pausa Longa
+	Pomodoro: 1500, // 25 minutos em segundos para Pomodoro
+	'Pausa Curta': 600, // 10 minutos em segundos para Pausa Curta
+	'Pausa Longa': 1200, // 20 minutos em segundos para Pausa Longa
 }
 let btnIniciarPausar = document.getElementById('btn-iniciar-pauser')
 let btnReiniciar = document.getElementById('btn-reiniciar')
