@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <h1 class="titulo">Pomodoro timer | fmota.dev</h1>
+  <div class="container-principal">
+    <div class="principal">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-link" onclick="abrirAba('Pomodoro')">Pomodoro</button>
+          <button class="tab-link" onclick="abrirAba('Pausa Curta')">Pausa Curta</button>
+          <button class="tab-link" onclick="abrirAba('Pausa Longa')">Pausa Longa</button>
+        </div>
+        <div class="conteudo">
+          <div class="timer">
+            <h1 id="tempo">25:00</h1>
+            <button id="btn-iniciar-pauser">INICIAR</button>
+            <button id="btn-reiniciar">REINICIAR</button>
+          </div>
+        </div>
+      </div>
+      <div class="historico">
+        <h2>Histórico de Pausas</h2>
+        <ul id="historico-pausas"></ul>
+        <button id="btn-resetar" class="btn-resetar hidden" onclick="resetarHistorico()">RESETAR HISTÓRICO</button>
+      </div>
+    </div>
+    <div class="explicacao">
+      <h2>Como funciona?</h2>
+      <p>O Pomodoro é uma técnica de gerenciamento de tempo que consiste em dividir o trabalho em períodos de 25 minutos, chamados de "pomodoros", separados por breves pausas. A técnica foi desenvolvida por Francesco Cirillo no final dos anos 1980 e é baseada na ideia de que pausas frequentes podem melhorar a agilidade mental.</p>
+      <p>Para começar, clique em "INICIAR" e aguarde o tempo passar.</p>
+      <p>A cada pomodoro poderá realizar uma pausa curta e após 4 pomodoros realizar uma pausa longa.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

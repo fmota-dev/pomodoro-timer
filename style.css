@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	background-color: #321743; /* Cor de fundo inicial para Pomodoro */
+	margin: 0;
+	transition: background-color 0.3s ease;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container-principal {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.titulo {
+	color: #ffffff;
+	font-size: 2em;
+	margin-bottom: 100px;
+}
+
+.principal {
+	display: flex;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 600px;
+	max-width: 100%;
+}
+
+.tabs {
+	display: flex;
+	justify-content: space-around;
+	background: #474747;
+	border-radius: 10px 10px 0 0;
+}
+
+.tab-link {
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+	background: none;
+	font-size: 1em;
+	outline: none;
+	color: #ffffff;
+}
+
+.tab-link.active {
+	color: #000;
+	background: #ffffff;
+	font-weight: bold;
+	border-radius: 10px 10px 0 0;
+}
+
+.conteudo {
+	display: flex;
+}
+
+.timer {
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+}
+
+.timer h1 {
+	font-size: 5em;
+	margin: 0;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 0.8em;
+	cursor: pointer;
+	border: none;
+	background: #495461de;
+	color: #ffffff;
+	border-radius: 5px;
+	outline: none;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+}
+
+.tab-link.active:hover {
+	background: #ffffff;
+}
+
+.btn-resetar {
+	background: #495461de;
+	margin-left: 10px;
+}
+
+.btn-resetar:hover,
+#btn-iniciar-pauser:hover,
+#btn-reiniciar:hover {
+	background: #495461;
+}
+
+.historico {
+	flex: 1;
+	padding: 20px;
+	background: #f9f9f9;
+	margin-left: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+}
+
+.historico h2 {
+	margin: 0 0 20px 0;
+}
+
+#historico-pausas {
+	list-style-type: none;
+	padding: 0;
+	height: 100%;
+}
+
+#historico-pausas li {
+	margin-bottom: 10px;
+	padding: 10px;
+	background: #eee;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+
+#historico-pausas li {
+	gap: 10px;
+}
+
+/* Cores de fundo dinâmicas para cada modo */
+.pomodoro {
+	background-color: #46225c;
+}
+
+.pausa-curta {
+	background-color: #38858a;
+}
+
+.pausa-longa {
+	background-color: #397097;
+}
+
+.pausa-recente {
+	background-color: #4d7fa2;
+}
+
+body.pomodoro .tabs {
+	background-color: #653f7a;
+}
+
+body.pausa-curta .tabs {
+	background-color: #4c9196;
+}
+
+body.pausa-longa .tabs {
+	background-color: #4d7fa2;
+}
+
+.explicacao {
+	color: #ffffffce;
+	max-width: 100%;
+	padding: 20px;
+	width: 1150px;
+}
+
+.explicacao h2 {
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.explicacao p {
+	margin-bottom: 20px;
+}
