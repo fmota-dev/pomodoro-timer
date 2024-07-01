@@ -49,6 +49,7 @@ function iniciarTimer() {
 				btnIniciarPausar.textContent = 'INICIAR'
 				registrarPausa()
 				beep.play() // Reproduz o som ao terminar o timer
+				reiniciarTimer() // Reinicia o timer automaticamente
 			}
 		}, 1000)
 	} else {
